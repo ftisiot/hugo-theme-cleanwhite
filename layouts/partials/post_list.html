@@ -1,6 +1,5 @@
 <!-- post list -->
 <div data-pagefind-ignore="all">
-{{ range $index, $element :=  where .Paginator.Pages ".Params.skip" "ne" "true" }}
 {{ $pages := where .Paginator.Pages ".Params.skip" "ne" "true" }}
   {{ if eq .Section "talks" }}
     {{ range $pages }}
